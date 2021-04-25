@@ -1,0 +1,121 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "product_categories": {
+      "collection": "product-categories"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_hot": {
+      "type": "boolean",
+      "default": false
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "sale_price": {
+      "type": "decimal"
+    },
+    "brands": {
+      "collection": "brand",
+      "via": "products",
+      "dominant": true
+    },
+    "review": {
+      "type": "integer"
+    },
+    "is_out_of_stock": {
+      "type": "boolean",
+      "default": false
+    },
+    "depot": {
+      "type": "integer"
+    },
+    "inventory": {
+      "type": "integer"
+    },
+    "variants": {
+      "type": "component",
+      "repeatable": true,
+      "component": "variants.variants"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "is_sale": {
+      "type": "boolean",
+      "default": false
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "slug": {
+      "type": "string"
+    },
+    "specification": {
+      "type": "dynamiczone",
+      "components": [
+        "product-specification.product",
+        "product-specification.services",
+        "product-specification.specification"
+      ],
+      "max": 1,
+      "min": 1,
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "tags": {
+      "collection": "product-tags"
+    },
+    "comments": {
+      "collection": "comment"
+    },
+    "product_type": {
+      "type": "enumeration",
+      "enum": [
+        "plant",
+        "product",
+        "service"
+      ],
+      "default": "plant"
+    },
+    "store": {
+      "model": "store",
+      "via": "products"
+    },
+    "rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 0,
+      "default": 5
+    }
+  }
+}

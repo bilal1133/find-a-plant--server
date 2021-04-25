@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_test_info_test_vendors",
+  "info": {
+    "name": "test-vendor",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "vendor_name": {
+      "type": "string"
+    }
+  }
+}

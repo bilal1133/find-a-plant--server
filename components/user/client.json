@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_user_clients",
+  "info": {
+    "name": "client",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "shipment_adress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "adress.adress"
+    }
+  }
+}

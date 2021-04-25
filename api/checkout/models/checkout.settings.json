@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "checkouts",
+  "info": {
+    "name": "checkout",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "shipment_status": {
+      "type": "enumeration",
+      "enum": [
+        "processing",
+        "delivered",
+        "completed",
+        "canceled"
+      ],
+      "default": "processing"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "store": {
+      "model": "store"
+    },
+    "products": {
+      "collection": "product"
+    },
+    "shipping_adress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "adress.adress"
+    },
+    "contact_no": {
+      "required": true,
+      "type": "integer"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "payment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "checkout.payments"
+    },
+    "payment_status": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

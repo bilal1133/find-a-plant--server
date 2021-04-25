@@ -1,0 +1,80 @@
+{
+  "collectionName": "components_product_specification_specifications",
+  "info": {
+    "name": "plant",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pot_size": {
+      "type": "float"
+    },
+    "climate_zone": {
+      "type": "string"
+    },
+    "planting_instructions": {
+      "type": "richtext",
+      "default": "Dig a hole large enough to accommodate the roots without bending them. Work soil around the roots, firm well and water thoroughly"
+    },
+    "spread": {
+      "type": "string"
+    },
+    "flower_color": {
+      "type": "string"
+    },
+    "flowering_season": {
+      "type": "string"
+    },
+    "flower_form": {
+      "type": "string"
+    },
+    "soil_requirenments": {
+      "type": "string",
+      "default": "Rich, moist, well-drained soil."
+    },
+    "watering_instructions": {
+      "type": "string",
+      "default": "Average water needs. Water regularly, do not overwater."
+    },
+    "pruning": {
+      "type": "string",
+      "default": "No pruning needed except for interfering branches."
+    },
+    "ship_as": {
+      "type": "string",
+      "default": "Plant along with pot."
+    },
+    "location": {
+      "type": "enumeration",
+      "enum": [
+        "corporate_building",
+        "bed_room",
+        "sitting_room",
+        "kitchen",
+        "bathroom",
+        "home_lawn",
+        "front_yard",
+        "back_yard"
+      ],
+      "default": "back_yard"
+    },
+    "sun_exposure": {
+      "type": "enumeration",
+      "enum": [
+        "full_sun",
+        "partial_shade",
+        "full_shade"
+      ]
+    },
+    "growth_rate": {
+      "type": "enumeration",
+      "enum": [
+        "moderate",
+        "fast",
+        "slow_to_moderate",
+        "slow"
+      ]
+    }
+  }
+}

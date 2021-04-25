@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_user_vendors",
+  "info": {
+    "name": "vendor",
+    "icon": "snowman",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "store_name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "adress.adress"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "profile_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "cover_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "payment_option": {
+      "type": "component",
+      "repeatable": true,
+      "component": "payment.payment",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_payment_payments",
+  "info": {
+    "name": "payment",
+    "icon": "money-bill-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "payment_method": {
+      "type": "enumeration",
+      "enum": [
+        "cash_on_delivery",
+        "jazz_cash",
+        "easypaisa",
+        "card"
+      ],
+      "default": "cash_on_delivery",
+      "unique": true
+    },
+    "payment_id": {
+      "type": "text",
+      "private": true,
+      "unique": true,
+      "required": false
+    }
+  }
+}

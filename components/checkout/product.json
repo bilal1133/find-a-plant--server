@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_checkout_products",
+  "info": {
+    "name": "product",
+    "icon": "anchor"
+  },
+  "options": {},
+  "attributes": {
+    "products": {
+      "collection": "product"
+    },
+    "quantity": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "discount": {
+      "type": "float"
+    }
+  }
+}

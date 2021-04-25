@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_checkout_shipments",
+  "info": {
+    "name": "shipment",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "adress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "adress.adress"
+    },
+    "special_note": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_test_info_information",
+  "info": {
+    "name": "test-user",
+    "icon": "ankh"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    }
+  }
+}

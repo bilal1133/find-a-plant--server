@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_adress_adresses",
+  "info": {
+    "name": "address",
+    "icon": "map-pin",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "provence": {
+      "type": "string"
+    },
+    "apartment": {
+      "type": "text"
+    }
+  }
+}

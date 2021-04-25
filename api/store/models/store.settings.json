@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stores",
+  "info": {
+    "name": "Store"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "store_name": {
+      "type": "uid"
+    },
+    "vendor": {
+      "via": "store",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "adress.adress"
+    },
+    "rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 0
+    },
+    "products": {
+      "via": "store",
+      "collection": "product"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "comment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "replies": {
+      "collection": "comment",
+      "via": "reply_of"
+    },
+    "reply_of": {
+      "model": "comment",
+      "via": "replies"
+    },
+    "user": {
+      "via": "comments",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
