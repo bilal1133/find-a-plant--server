@@ -88,8 +88,8 @@
       "default": "client"
     },
     "store": {
-      "model": "store",
-      "via": "vendor"
+      "via": "vendor",
+      "model": "store"
     },
     "address": {
       "type": "component",

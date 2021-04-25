@@ -1182,11 +1182,11 @@
               "rating": {
                 "type": "integer"
               },
-              "products": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "profile_image": {
+                "type": "string"
+              },
+              "cover_image": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

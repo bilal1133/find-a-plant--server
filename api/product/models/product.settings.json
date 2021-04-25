@@ -108,8 +108,7 @@
       "default": "plant"
     },
     "store": {
-      "model": "store",
-      "via": "products"
+      "model": "store"
     },
     "rating": {
       "type": "integer",
