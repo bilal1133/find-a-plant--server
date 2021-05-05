@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_social_socials",
+  "info": {
+    "name": "Social",
+    "icon": "fan"
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    }
+  }
+}

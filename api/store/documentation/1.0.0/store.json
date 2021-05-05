@@ -516,7 +516,8 @@
     "schemas": {
       "Store": {
         "required": [
-          "id"
+          "id",
+          "social"
         ],
         "properties": {
           "id": {
@@ -771,6 +772,35 @@
               }
             }
           },
+          "description": {
+            "type": "string"
+          },
+          "social": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "facebook": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
+              },
+              "instagram": {
+                "type": "string"
+              },
+              "twitter": {
+                "type": "string"
+              }
+            }
+          },
+          "contact_no": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -778,6 +808,9 @@
         }
       },
       "NewStore": {
+        "required": [
+          "social"
+        ],
         "properties": {
           "store_name": {
             "type": "uid"
@@ -815,6 +848,35 @@
             }
           },
           "rating": {
+            "type": "integer"
+          },
+          "description": {
+            "type": "string"
+          },
+          "social": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "facebook": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
+              },
+              "instagram": {
+                "type": "string"
+              },
+              "twitter": {
+                "type": "string"
+              }
+            }
+          },
+          "contact_no": {
             "type": "integer"
           },
           "published_at": {

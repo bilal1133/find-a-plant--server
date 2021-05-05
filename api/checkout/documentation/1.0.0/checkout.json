@@ -615,7 +615,8 @@
           },
           "store": {
             "required": [
-              "id"
+              "id",
+              "social"
             ],
             "properties": {
               "id": {
@@ -638,6 +639,15 @@
               },
               "cover_image": {
                 "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "social": {
+                "type": "component"
+              },
+              "contact_no": {
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"

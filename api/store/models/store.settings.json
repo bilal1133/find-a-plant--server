@@ -50,6 +50,18 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "social": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social.social",
+      "required": true
+    },
+    "contact_no": {
+      "type": "biginteger"
     }
   }
 }

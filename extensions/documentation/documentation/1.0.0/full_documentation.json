@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/25/2021 11:16:54 PM"
+    "x-generation-date": "05/06/2021 12:10:24 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7893,7 +7893,8 @@
           },
           "store": {
             "required": [
-              "id"
+              "id",
+              "social"
             ],
             "properties": {
               "id": {
@@ -7916,6 +7917,15 @@
               },
               "cover_image": {
                 "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "social": {
+                "type": "component"
+              },
+              "contact_no": {
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"
@@ -9302,7 +9312,8 @@
           },
           "store": {
             "required": [
-              "id"
+              "id",
+              "social"
             ],
             "properties": {
               "id": {
@@ -9325,6 +9336,15 @@
               },
               "cover_image": {
                 "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "social": {
+                "type": "component"
+              },
+              "contact_no": {
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"
@@ -9979,7 +9999,8 @@
       },
       "Store": {
         "required": [
-          "id"
+          "id",
+          "social"
         ],
         "properties": {
           "id": {
@@ -10234,6 +10255,35 @@
               }
             }
           },
+          "description": {
+            "type": "string"
+          },
+          "social": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "facebook": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
+              },
+              "instagram": {
+                "type": "string"
+              },
+              "twitter": {
+                "type": "string"
+              }
+            }
+          },
+          "contact_no": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -10241,6 +10291,9 @@
         }
       },
       "NewStore": {
+        "required": [
+          "social"
+        ],
         "properties": {
           "store_name": {
             "type": "uid"
@@ -10278,6 +10331,35 @@
             }
           },
           "rating": {
+            "type": "integer"
+          },
+          "description": {
+            "type": "string"
+          },
+          "social": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "facebook": {
+                "type": "string"
+              },
+              "linkedin": {
+                "type": "string"
+              },
+              "instagram": {
+                "type": "string"
+              },
+              "twitter": {
+                "type": "string"
+              }
+            }
+          },
+          "contact_no": {
             "type": "integer"
           },
           "published_at": {
@@ -10710,7 +10792,8 @@
           },
           "store": {
             "required": [
-              "id"
+              "id",
+              "social"
             ],
             "properties": {
               "id": {
@@ -10733,6 +10816,15 @@
               },
               "cover_image": {
                 "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "social": {
+                "type": "component"
+              },
+              "contact_no": {
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"
