@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "POST",
+      "path": "/create-payment-intent",
+      "handler": "checkout.stripePayment",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }
