@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "checkout_products",
+  "info": {
+    "name": "checkout_products"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "store": {
+      "model": "store"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "checkout": {
+      "via": "checkout_products",
+      "model": "checkout"
+    }
+  }
+}
