@@ -3,7 +3,7 @@ module.exports = ({ env }) => {
     host: env("HOST", "0.0.0.0"),
     port: env.int("PORT", 1337),
     // Added by Bilal
-    // url: "https://find-a-plant--server.herokuapp.com/",
+    url: "https://find-a-plant--server.herokuapp.com/",
     // url: "http://localhost:1337",
 
     admin: {
